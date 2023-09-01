@@ -12,6 +12,44 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 10px; 
+}
+
+.item-reservas {
+  background-color: green;
+}
+
+.item-reservas.reservada {
+  background-color: red;
+  cursor: not-allowed;
+}
+.user-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%; 
+  margin: 0 ; 
+}
+.element {
+  margin: 10px 0;
+  padding: 10px;
+}
+.content-box {
+  overflow: auto;
+  max-width: 100%; 
+  box-sizing: border-box;
+}
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+  }
+}
+
 
 .App-header {
   background-color: #282c34;
